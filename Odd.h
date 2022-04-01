@@ -1,20 +1,19 @@
+/*
+    Code: Odd
+    Author: Luis
+
+*/
 #include <stdbool.h>
-#include <stdlib.h>
 
 int odd(int array[], int len) {
-    int count   = 0;
+    int count = 0;
     for (int index = 0; index < len; index ++) {
     
-    int numberToTest = index;
-    float result = numberToTest % 2;
-    bool hasModule = (result > 0);
+    int numberToTest = array[index];
+    int result = numberToTest % 2;
+    bool isDivited = (result  == 0);
 
-        if (hasModule){
-            count++;
-       }
-       else{
-            
-        }
+    if (!isDivited) count++;
         
     }
     return count;
