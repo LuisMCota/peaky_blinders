@@ -5,8 +5,6 @@ int min(int array[], int len){
         if(array[index] < array[min]){
             min = index;
             index++;
-            }else{
-                index++;
             }
     }
     return array[min];
