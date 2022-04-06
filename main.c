@@ -4,16 +4,33 @@
 #include "Min.h"
 #include "max.h"
 
-int array[3] = {3,1,10};
+
 int main(){
-    int numbersOdd = odd(array, 3);
-    int numberToFind = find(array, 3, 1);
-    int minNumber = min(array, 3);
-    int maxNumber = max(array, 3);
-    printf("Odd %d \n", numbersOdd);
-    printf("find %d\n", numberToFind);
-    printf("min %d\n",minNumber);
-    printf("max %d\n", maxNumber);
+
+int* array; 
+int n;
+int findnumber;
+
+printf("Array length: \n");
+scanf("%d", &n);
+
+printf("Number to find: \n");
+scanf("%d", &findnumber);
+
+    for(int i = 0; i < n; i++){
+        printf("Numbers of array: \n");
+        scanf("%d", &array[i]);   
+}
+
+    int numbersOdd = odd(array, n);
+    int numberToFind = find(array, n, findnumber);
+    int minNumber = min(array, n);
+    int maxNumber = max(array, n);
+
+    printf("Odd numbers = %d \n", numbersOdd);
+    printf("Find = %d\n", numberToFind);
+    printf("Min = %d\n",minNumber);
+    printf("Max = %d\n", maxNumber);
     
 return 0;
 }
